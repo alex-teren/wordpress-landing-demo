@@ -64,8 +64,8 @@ section,
 }
 
 svg {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   z-index: 100;
   position: relative;
 }
@@ -74,11 +74,12 @@ svg {
   width: 60px;
   height: 60px;
   float: right;
-  position: relative;
+  position: fixed;
   z-index: 100;
   border: none;
   right: 20px;
   top: 20px;
+  background-color: #000;
 }
 
 .toggle_mnu span {
