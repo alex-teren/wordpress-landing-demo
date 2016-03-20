@@ -24,6 +24,38 @@ section,
 .main_head
 	position: relative
 
+section
+	padding: 70px 0 90px
+	h2
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin: 0 0 15px
+		letter-spacing: 1px
+	.personal_header
+		font-size: 13px
+		text-align: left
+		margin-bottom: 30px
+		color: #555 
+
+.s_descr_wrap
+	text-align: center
+	.s_descr
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		position: relative
+		margin-bottom: 130px
+		font-weight: 600
+		&::after
+			content: ""
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 60px
+			position: absolute
+			width: 150px
+ 
 .main_head
 	min-height: 620px
 	padding-top: 20px
@@ -42,7 +74,7 @@ section,
 		background-image: url("../img/preloader.gif")
 		background-size: cover
 		background-repeat: no-repeat
-		background-posirion: center center
+		background-position: center center
 		background-color: #fff
 		height: 60px
 		width: 60px
@@ -60,7 +92,8 @@ svg
 	width: 60px
 	z-index: 100
 	position: relative
-
+	// fill: #09967A
+	fill: #e5e5e5
 .toggle_mnu
 	width: 60px
 	height: 60px
@@ -103,9 +136,6 @@ $h: 3px
 	//transition-delay: 0.2s, 0s
 
 
-svg
-	path
-		fill: #e0e0e0 
 
 .sw-bottom
 	position: relative
@@ -185,3 +215,60 @@ svg
 				+transition(all 0.5s ease)
 				&:hover
 					background-color: rgba(255,255,255,.08)
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+
+	z-index: 10
+	.top_descr
+		display: table-row
+
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+
+		+transition(all 1s ease) 
+		p
+			margin: 0
+			text-transform: uppercase
+			color: #FFFFFF
+			font-weight: 700
+			+animation-delay(1s) 
+
+		h1
+			display: inline-block
+			padding: 10px 35px
+			color: #fff
+			border: 6px solid #fff
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 2.8em
+			background-color: rgba(0,0,0,.1)
+			margin-left: 20px
+			margin-right: 20px
+			+animation-delay(.5s)
+			box-shadow: rgba(0,0,0,.2) 0 0 0 2000px
+
+ 
+.opacity
+ opacity: .3
+ +transition(all .25s ease);
+
+
+.main_footer
+	padding: 50px 0
+	font-size: 13px
+	font-weight: 300
+	.social_wrap
+		float: right
+		line-height: 0
+		ul
+			margin: 0 
