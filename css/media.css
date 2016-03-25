@@ -17,6 +17,21 @@
 	.top_wrapper .top_text h1 {
 		font-size: 2em;
 	}
+	.resume_container .left
+	{
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.section_content .resume_container h3,
+	.resume_container .resume_icon{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.s_descr_wrap .s_descr {
+		margin-bottom: 80px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
